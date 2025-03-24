@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <vector>
 
 int hourglassSum(std::vector<std::vector<int>> arr) {
     // Initialize the maximum sum to a very low value (less than the minimum possible hourglass sum).
