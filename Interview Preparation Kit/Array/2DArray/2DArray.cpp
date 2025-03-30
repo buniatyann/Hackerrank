@@ -1,5 +1,9 @@
 #include <vector>
 
+/*
+    Time Complexity: O(1)
+    Space Complexity O(1)
+*/
 int hourglassSum(std::vector<std::vector<int>> arr) {
     // Initialize the maximum sum to a very low value (less than the minimum possible hourglass sum).
     int sum = -1000; 
