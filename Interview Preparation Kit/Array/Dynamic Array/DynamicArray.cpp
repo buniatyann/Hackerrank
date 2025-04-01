@@ -1,5 +1,10 @@
-#include <bits/stdc++.h>
+#include <vector>
 
+/*
+    Time Complexity: O(q)
+    Space Complexity: O(n + q)
+    Where q is the number of queries
+*/
 std::vector<int> dynamicArray(int n, const std::vector<std::vector<int>>& queries) {
     // Initialize a 2D vector of empty vectors to hold dynamic arrays
     std::vector<std::vector<int>> l(n);
@@ -17,7 +22,8 @@ std::vector<int> dynamicArray(int n, const std::vector<std::vector<int>>& querie
         if (query[0] == 1) {
             // Type 1: Append the value query[2] to the array at index a
             l[a].push_back(query[2]);
-        } else if (query[0] == 2) {
+        } 
+        else if (query[0] == 2) {
             // Type 2: Retrieve the value from the array at index a and specified index query[2]
             // The index is adjusted with modulo to avoid out-of-bounds access
             lastAnswer = l[a][query[2] % l[a].size()];
