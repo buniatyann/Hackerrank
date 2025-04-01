@@ -1,5 +1,9 @@
-#include <bits/stdc++.h>
+#include <vector>
 
+/*
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+*/
 std::vector<int> rotLeft(std::vector<int> a, int d) {
     std::vector<int> ans(a.size());
     int k = 0;
@@ -18,6 +22,11 @@ std::vector<int> rotLeft(std::vector<int> a, int d) {
 }
 
 // better one
+
+/*
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+*/
 std::vector<int> rotLeft(std::vector<int> a, int d) {
     if (a.size() == 0) return a;  // Handle empty vector
     d = d % a.size();              // Adjust d for larger than n
